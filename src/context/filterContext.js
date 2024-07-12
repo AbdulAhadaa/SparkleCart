@@ -37,7 +37,7 @@ const sorting=(event)=>{
 
 
     const setgridview=()=>{
-        return dispatch({type:"set_grid_view"})
+        return dispatch( {type:"set_grid_view"})
     }
     const setlistview=()=>{
         return dispatch({type:"set_list_view"})

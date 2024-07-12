@@ -6,11 +6,13 @@ const filterReducer=(state,action)=>{
 switch(action.type){
 
 case "LOAD_FILTER_PRODUCTS":
+
     let pricearr = action.payload.map((curElm)=>{
     return curElm.price
     })
+
+
 let maxprice = Math.max(...pricearr)
-console.log(maxprice)
 
     return{
         ...state,
@@ -83,7 +85,8 @@ case "Sorting_Value":
 
   }
     case "UPDATE_FILTERS":
-let {all_products}= state;
+        
+let {all_products} = state;
 let tempfilterproducts = [...all_products]
 const {text,category,company,color,price} = state.filters;
 

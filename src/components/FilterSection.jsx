@@ -22,6 +22,7 @@ return curElm[property]
 });
 if(property==="colors"){
  newVal= newVal.flat()
+
  
 }
 
@@ -66,7 +67,10 @@ console.log(colorsonlydata)
     value={curElm}
     
     onClick={updateFilterValue} >
+
+
 {curElm}
+
     </button>
  )
             })
